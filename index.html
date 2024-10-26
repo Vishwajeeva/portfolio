@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">My Portfolio</div> 
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="animated-text">VISHWA JEEVA</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()"></div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- profile container -->
+
+  <section id="profile">
+    <div class="section-container">
+      <div class="section__text">
+        <p class="section__text__p1">I'm</p>
+        <h2 class="title">VISHWA JEEVA</h2>
+        <p>A SOFTWARE DEVELOPER</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vishwa2708/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Vishwajeeva'"
+          />
+        </div>
+      </div>
+      <div>
+            <img src="./assets/pic10c.png" 
+            alt="vishwa profile picture" 
+            class="section__pic-container"/>
+      </div>
+    </div>
+  </section><br><br>
+
+
+  <!-- about -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container2">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+            />
+            <h3>Experience</h3>
+            <p>INTERN IN GRID R&D <br /> AS A SOFTWARE DEVELOPER</p>
+          </div>
+          <div class="details-container">
+            <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+            />
+            <h3>Education</h3>
+            <p>MCA - Bharathidasan University</p>
+          </div>
+        </div>
+      </div>
+                              
+      <div class="arrow">
+        <img
+        src="./assets/arrow_up.png"
+        alt="Arrow icon"
+        class="icon"
+        onclick="location.href='./'"
+        />
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon"
+        onclick="location.href='./#skills'"
+        />
+      </div>
+    </div>
+  </section>
+
+
+<!-- skills container -->
+<section id="skills">
+  <h1>Skills</h1>
+  <div class="section-container3">
+    <div class="skills-details-container">
+      <div class="skills-containers">
+        <div class="details-container1">
+          <h2>Programming Languages</h2>
+          <div class="languages-list">
+            <ul>
+              <li><img
+                src="./assets/python.png"
+                alt="Experience icon"
+                class="icon"
+                />Python</li>
+              <li><img
+                src="./assets/html.jpg"
+                alt="Experience icon"
+                class="icon"
+                />HTML</li>
+            </ul>
+            <ul>
+              <li><img
+                src="./assets/c1.png"
+                alt="Experience icon"
+                class="icon"
+                />C</li>
+              <li><img
+                src="./assets/css.png"
+                alt="Experience icon"
+                class="icon"
+                />CSS</li>
+            </ul>
+            <ul>
+              <li><img
+                src="./assets/java1.png"
+                alt="Experience icon"
+                class="icon"
+                />Java</li>
+              <li><img
+                src="./assets/js.jpg"
+                alt="Experience icon"
+                class="icon"
+                />JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-container1">
+          <h2>Databases</h2>
+          <ul>
+            <li><img
+              src="./assets/mysql.png"
+              alt="Experience icon"
+              class="icon"
+              />MySQL</li>
+            <li><img
+              src="./assets/mongodb.png"
+              alt="Experience icon"
+              class="icon"
+              />MongoDB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills-containers">
+        <div class="details-container1">
+          <h2>Operating Systems</h2>
+          <ul>
+            <li><img
+              src="./assets/windows1.png"
+              alt="Experience icon"
+              class="icon"
+              />Windows</li>
+            <li><img
+              src="./assets/linux3.png"
+              alt="Experience icon"
+              class="icon"
+              />Linux</li>
+          </ul>
+        </div>
+        <div class="details-container1">
+          <h2>Cloud Platforms</h2>
+          <ul>
+            <li><img
+              src="./assets/aws.png"
+              alt="Experience icon"
+              class="icon"
+              />AWS (EC2, S3)</li>
+          </ul>
+        </div>
+        <div class="details-container1">
+          <h2>Tools & Technologies</h2>
+          <ul>
+            <li><img
+              src="./assets/jenkins.jpg"
+              alt="Experience icon"
+              class="icon"
+              />Jenkins</li>
+            <li><img
+              src="./assets/git.png"
+              alt="Experience icon"
+              class="icon"
+              />Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="arrow">
+    <img
+      src="./assets/arrow_up.png"
+      alt="Arrow icon"
+      class="icon"
+      onclick="location.href='#about'"
+    />
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon"
+      onclick="location.href='#projects'"
+    />
+  </div> -->
+</section>
+
+ 
+             
+  <!--projects -->
+     <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="project-containers">
+            <div class="details-containe color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/face.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">FACE DETECTION</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Vishwajeeva'">
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Vishwajeeva'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-containe color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/cms2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">CMS</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Vishwajeeva'">
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Vishwajeeva'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-containe color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/jwt2.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">RBAC </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Vishwajeeva'">
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Vishwajeeva'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow">
+          <img
+            src="./assets/arrow_up.png"
+            alt="Arrow icon"
+            class="icon"
+            onclick="location.href='./#skills'"
+          />
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon"
+            onclick="location.href='./#contact'"
+          />
+        </div>
+      </section>
+  
+      <!-- contact -->
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:vishwajeeva2708@gmail.com">vishwajeeva2708@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/vishwa2708/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+  
+  
+      <div class="footer">
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  
+  
+  
+      <footer>  
+        <p>Copyright &#169; 2024 Vishwa. All Rights Reserved.</p>
+      </footer>    
+
+
+</body>
+</html>
